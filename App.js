@@ -1,20 +1,22 @@
 import * as React from 'react';
-import { View } from 'react-native';
 import MapView from 'react-native-maps';
+import { StyleSheet, Text, View } from 'react-native';
+
 
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <MapView style={{
-        width: "100%",
-        height: "100%",
-      }} />
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+     
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
